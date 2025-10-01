@@ -28,7 +28,11 @@ def process_image(image_path):
         if img.mode in ['RGB', 'RGBA']:
             img = img.convert('L')
 
-        img = img.resize((150, 150), Image.Resampling.LANCZOS)
+        try:
+            img = img.resize((150, 150), Image.Resampling.LANCZOS)
+        except AttributeError:
+            # Fallback for older Pillow versions
+            img = img.resize((150, 150), Image.LANCZOS)
         img_array = np.array(img, dtype=np.float32)/255.0
         img_array = np.expand_dims(img_array, axis=0)
 
@@ -91,5 +95,10 @@ def predict():
     except Exception as e:
         raise
 
+# Configure the app for production
+app.config['DEBUG'] = False
+port = int(os.environ.get('PORT', 8000))
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    # This block will only run when you execute app.py directly (not through gunicorn)
+    app.run(host='0.0.0.0', port=port)

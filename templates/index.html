@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="top-header">Pneumonia Detection from X-ray Images</h1>
+        <div class="title-box">
+            <h1 class="top-header">Pneumonia Detection from X-ray Images</h1>
+        </div>
         <div class="upload-container">
             <form id="uploadForm" enctype="multipart/form-data">
                 <div class="upload-area" id="dropZone">
@@ -38,6 +40,6 @@
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
 </body>
 </html> 

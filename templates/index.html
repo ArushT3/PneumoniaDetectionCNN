@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pneumonia Detection</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="nak">Pulmora</a>
+            <ul class="navbar-menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="#">Detection Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="title-box">
-            <h1 class="top-header">Pneumonia Detection from X-ray Images</h1>
+            <h1 class="top-header">Pneumonia Detection Page <br>
+                Upload X-ray Image
+            </h1>
         </div>
         <div class="upload-container">
             <form id="uploadForm" enctype="multipart/form-data">
@@ -18,9 +36,10 @@
                     <input type="file" id="fileInput" name="file" accept="image/*" style="display: none;">
                     <button type="button" class="upload-button">Choose File</button>
                 </div>
+                <button type="button" class="reset-button" onclick="location.reload();">Reset</button>
             </form>
         </div>
-        
+
         <div class="result-container" id="resultContainer">
             <div class="image-preview">
                 <img id="previewImage" src="" alt="X-ray Preview">
@@ -42,4 +61,5 @@
 
     <script src="{{ url_for('static', filename='script.js')}}"></script>
 </body>
-</html> 
+
+</html>

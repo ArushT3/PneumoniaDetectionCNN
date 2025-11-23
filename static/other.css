@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: #263238;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Brand/logo */
+.nak {
+    font-size: 30px; 
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Menu list */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background-color: #555; 
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
+}
+
+/* about us page or msth */
+
+.section-box {
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #007bff;
+}
+
+.section-box h1 {
+    color: #007bff;
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-box p {
+    font-size: 18px;
+    margin: 0;
+    text-align: justify;
+}
+
+.section-box a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section-box a:hover {
+    color: #0056b3;
+}
+
+
+/* home page */
+
+/* Hero section for a welcoming top */
+.topp {
+    background-color: #e3f2fd;
+    text-align: center;
+    margin-top: 80px;  /* Account for fixed navbar */
+}
+
+.topp h1 {
+    padding-top: 0px;
+    color: #007bff;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.topp p {
+    margin-top: -20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.getstart {
+    background-color: #fa4c1c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Features wrapper and cards */
+.features-wrapper {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-card h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.disc {
+    margin-left: 250px;
+    align-items: center;
+    width: 1000px;
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #007bff;
+}

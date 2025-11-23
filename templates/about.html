@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='other.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="nak">Pulmora</a>
+            <ul class="navbar-menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('index') }}">Detection Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section-box">
+            <h1>About The Website</h1>
+            <p>Pulmora is designed to help users in detecting pneumonia by analyzing X-ray images using artificial
+                intelligence.
+                The website uses a deep learning model called Convolutional Neural Network (CNN) for this.
+                Pulmora also provides more information about pneumonia, its symptoms, prevention, and treatment options.
+                This website was made as part of an IB personal project by Arush Tiwary.
+            </p>
+        </div>
+
+        <div class="section-box">
+            <h1>How does the website work?</h1>
+            <p>The website uses a machine learning model called Convolutional Neural Network (CNN)
+                which is trained to look at X-ray images for pneumonia.
+                The model is trained on a large dataset of 5000 labeled X-ray images. This allows it to accurately
+                identify patterns
+                associated with pneumonia.
+                With this training, it is able to detect patterns in new X-ray images uploaded by users that may
+                indicate pneumonia.
+                Users can upload their X-ray images, and the image is passed through the backend which contains the
+                model.
+                The model then provides the user with a
+                diagnosis along with a confidence score, based on how sure the model is on its guess.
+                The model has a training accouracy of ~95%</p>
+        </div>
+
+
+        <div class="section-box">
+            <h1>What is Pneumonia?</h1>
+            <p>Pneumonia is an infection which inflames the alveoli (air sacs) in one or both lungs. During pneumonia,
+                the
+                alveoli may fill with fluid or pus, which can cause symptoms such as cough, fever, and difficulty
+                breathing.
+                Pneumonia can be caused by a variety of different sources, including bacteria (such as Streptococcus
+                pneumoniae), viruses
+                (such as influenza), and fungi.
+                Refer <a href="https://my.clevelandclinic.org/health/diseases/4471-pneumonia">here</a> for more
+                information.</p>
+        </div>
+
+
+        <div class="section-box">
+            <h1>Prevention and Treatment</h1>
+            <p>Preventive measures include vaccination, good hygiene practices, and avoiding smoking. Some treatment
+                options for pneumonia includes: antibiotics for bacterial pneumonia;
+                antiviral medications for viral pneumonia; and antifungal treatments for fungal pneumonia.
+                For more details, visit <a href="https://www.cdc.gov/pneumonia/prevention.html">CDC Pneumonia
+                    Prevention</a>.</p>
+        </div>
+
+
+        <div class="section-box">
+            <h1>Disclaimer</h1>
+            This website is intended for educational and informational purposes only. It is not a medical device
+            and should <b>not</b> be used to diagnose or treat pneumonia. The website can only provide predictions
+            and not a definite answer and should never be used to replace professional medical workers.
+        </div>
+</body>
+
+</html>

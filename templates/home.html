@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pulmora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='other.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="nak">Pulmora</a>
+            <ul class="navbar-menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('index') }}">Detection Page</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="topp">
+        <h1>Welcome to Pulmora</h1>
+        <p>Detect pneumonia in X-rays with AI.</p>
+        <a href="{{ url_for('index') }}" class="getstart">Get Started</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-wrapper">
+        <div class="feature-card">
+            <h2>Quick Analysis</h2>
+            <p>Upload an X-ray and get results in seconds.</p>
+        </div>
+        <div class="feature-card">
+            <h2>High Accuracy</h2>
+            <p>95% training Accuracy</p>
+        </div>
+        <div class="feature-card">
+            <h2>Free to Use</h2>
+            <p>No cost for checking your health.</p>
+        </div>
+    </div>
+
+    <div class="disc">
+        <h1>Disclaimer</h1>
+        <p>This website is intended for educational and informational purposes only. It is not a medical device
+            and should <b>not</b> be used to diagnose or treat pneumonia. The website can only provide predictions
+        and not a definite answer and should never be used to replace professional medical workers.</p>
+    </div>
+
+</body>
+
+</html>

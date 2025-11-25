@@ -14,11 +14,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" class="nak">Pulmora</a>
+            <a href="{{ url_for('home') }}" class="nak">Pulmora</a>
             <ul class="navbar-menu">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('index') }}">Detection Page</a></li>
+                <li><a href="{{ url_for('extra') }}">Extra Information</a></li>
             </ul>
         </div>
     </nav>
@@ -50,37 +51,21 @@
                 The model has a training accouracy of ~95%</p>
         </div>
 
-
         <div class="section-box">
-            <h1>What is Pneumonia?</h1>
-            <p>Pneumonia is an infection which inflames the alveoli (air sacs) in one or both lungs. During pneumonia,
-                the
-                alveoli may fill with fluid or pus, which can cause symptoms such as cough, fever, and difficulty
-                breathing.
-                Pneumonia can be caused by a variety of different sources, including bacteria (such as Streptococcus
-                pneumoniae), viruses
-                (such as influenza), and fungi.
-                Refer <a href="https://my.clevelandclinic.org/health/diseases/4471-pneumonia">here</a> for more
-                information.</p>
+            <h1>What to do with your diagnosis?</h1>
+            <p>After you receive your diagnosis from the website, you should analyse the score.
+                The confidence score shows how sure the model is about its diagnosis.
+                If the confidence score is high (above 80%), you can be fairly confident in the diagnosis.
+                However, if the confidence score is low (below 60%), it's best to take the diagnosis with a grain of salt 
+                as the lowest confidence score possible is 50% (like flipping a coin).
+                Regardless of the score, it is always best to consult a healthcare provider for a definitive diagnosis
+                and appropriate treatment. Again, this tool is only a prediction tool and should not be used
+                as a replacement for a medical professional.
+            </p>
         </div>
 
 
-        <div class="section-box">
-            <h1>Prevention and Treatment</h1>
-            <p>Preventive measures include vaccination, good hygiene practices, and avoiding smoking. Some treatment
-                options for pneumonia includes: antibiotics for bacterial pneumonia;
-                antiviral medications for viral pneumonia; and antifungal treatments for fungal pneumonia.
-                For more details, visit <a href="https://www.cdc.gov/pneumonia/prevention.html">CDC Pneumonia
-                    Prevention</a>.</p>
-        </div>
 
-
-        <div class="section-box">
-            <h1>Disclaimer</h1>
-            This website is intended for educational and informational purposes only. It is not a medical device
-            and should <b>not</b> be used to diagnose or treat pneumonia. The website can only provide predictions
-            and not a definite answer and should never be used to replace professional medical workers.
-        </div>
 </body>
 
 </html>

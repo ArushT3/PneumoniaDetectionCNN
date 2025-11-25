@@ -14,18 +14,19 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" class="nak">Pulmora</a>
+            <a href="{{ url_for('home') }}" class="nak">Pulmora</a>
             <ul class="navbar-menu">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="#">Detection Page</a></li>
+                <li><a href="{{ url_for('extra') }}">Extra Information</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
         <div class="title-box">
-            <h1 class="top-header">Pneumonia Detection Page <br>
+            <h1 class="top-header">
                 Upload X-ray Image
             </h1>
         </div>

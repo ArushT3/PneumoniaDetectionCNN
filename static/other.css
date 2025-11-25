@@ -8,7 +8,7 @@
 /* Navbar container */
 .navbar {
     font-family: 'Poppins', sans-serif;
-    background-color: #263238;
+    background-color: #0288d1;
     color: white;
     padding: 10px 0;
     position: fixed;
@@ -27,7 +27,7 @@
 
 /* Brand/logo */
 .nak {
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -37,7 +37,7 @@
 .navbar-menu {
     list-style: none;
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .navbar-menu li a {
@@ -48,7 +48,7 @@
 }
 
 .navbar-menu li a:hover {
-    background-color: #555; 
+    background-color: #555;
     border-radius: 4px;
 }
 
@@ -111,11 +111,18 @@ body {
 
 /* home page */
 
-/* Hero section for a welcoming top */
 .topp {
     background-color: #e3f2fd;
     text-align: center;
-    margin-top: 80px;  /* Account for fixed navbar */
+    margin-top: 80px;
+    background-color: #ffffff;
+    padding: 0px;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .topp h1 {
@@ -134,12 +141,13 @@ body {
 }
 
 .getstart {
-    background-color: #fa4c1c;
+    background-color: #0387ce;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 10px;
+    margin-left: 660px;
 }
 
 /* Features wrapper and cards */
@@ -174,12 +182,101 @@ body {
 }
 
 .disc {
-    margin-left: 250px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 1000px;
     background-color: #ffffff;
     padding: 30px 50px;
     border-radius: 20px;
     margin-bottom: 30px;
     border: 2px solid #007bff;
+}
+
+
+
+/* extra Design */
+
+/* Existing styles... */
+
+/* For the box with image on the side */
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-content {
+    flex-shrink: 0;
+}
+
+.image-content img {
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+.big-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 40px; 
+    margin-bottom: -100px;
+    margin-top: -40px;
+}
+
+.symp {
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 2px solid #007bff;
+    flex: 1;  
+    max-width: 720px;  
+}
+
+.symp h1 {
+    color: #007bff;
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.symp p {
+    font-size: 18px;
+    margin: 0;
+    text-align: justify;
+}
+
+.symp a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.symp a:hover {
+    color: #0056b3;
+}
+
+.symp li{
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+.section-box li {
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#alk{
+    margin-top: 107px;
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='other.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="{{ url_for('home') }}" class="nak">Pulmora</a>
+            <ul class="navbar-menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('index') }}">Detection Page</a></li>
+                <li><a href="{{ url_for('extra') }}">Extra Information</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section-box">
+            <h1>What Is Pneumonia?</h1>
+            <p>Pneumonia is an infection that affects the alveoli, which are tiny air sacs in your lungs. These air sacs
+                are filled with air and help your body take in oxygen.
+                When someone has pneumonia, the alveoli become inflamed and fill with fluid or pus. Because of this, the
+                lungs can’t move oxygen.
+            </p>
+        </div>
+    </div>
+
+    <div class="big-wrap">
+        <div class="symp">
+            <div class="text-content">
+                <h1>Symptoms Of Pneumonia</h1>
+                <p>Some symptoms of Pneumonia include:
+                <ul>
+                    <li>Cough (may bring up mucus)</li>
+                    <li>Fever or chills</li>
+                    <li>Shortness of breath</li>
+                    <li>Chest pain when breathing or coughing</li>
+                    <li>Tiredness or weakness</li>
+                    <li>Fast breathing or heartbeat</li>
+                    <li>Loss of appetite</li>
+                    <li>Nausea or vomiting</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="{{ url_for('static', filename='imageimage.jpeg') }}" alt="Pneumonia Diagram"
+                style="width: 400px; height: 400px;">
+        </div>
+    </div>
+
+    <div class="container" id="alk">
+        <div class="section-box">
+            <h1>Causes of Pneumonia</h1>
+            <p>Pneumonia can be caused by various microorganisms, including bacteria, viruses, and fungi. The most
+                common causes are: <br>
+                <ul>
+                    <li><strong>Bacterial Pneumonia:</strong> Often caused by Streptococcus pneumoniae.</li>
+                    <li><strong>Viral Pneumonia:</strong> Caused by influenza viruses, respiratory syncytial
+                        virus (RSV), and coronaviruses.</li>
+                    <li><strong>Fungal Pneumonia:</strong> Caused by fungi like Histoplasma and Coccidioides.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="section-box">
+            <h1>Prevention and Treatment</h1>
+            <p>Preventive measures include vaccination, good hygiene practices, and avoiding smoking. Some treatment
+                options for pneumonia includes: antibiotics for bacterial pneumonia;
+                antiviral medications for viral pneumonia; and antifungal treatments for fungal pneumonia.
+                For more details, visit <a href="https://www.cdc.gov/pneumonia/prevention/?CDC_AAref_Val">CDC Pneumonia
+                    Prevention</a>.</p>
+        </div>
+    </div>
+
+
+
+    <div>
+
+    </div>
+
+
+</body>
+
+</html>

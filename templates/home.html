@@ -14,23 +14,22 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" class="nak">Pulmora</a>
+            <a href="{{ url_for('home') }}" class="nak">Pulmora</a>
             <ul class="navbar-menu">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('index') }}">Detection Page</a></li>
+                <li><a href="{{ url_for('extra') }}">Extra Information</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <div class="topp">
-        <h1>Welcome to Pulmora</h1>
+       <h1>Welcome to Pulmora</h1>
         <p>Detect pneumonia in X-rays with AI.</p>
-        <a href="{{ url_for('index') }}" class="getstart">Get Started</a>
     </div>
+        <a href="{{ url_for('index') }}" class="getstart">Get Started</a>
 
-    <!-- Features Section -->
     <div class="features-wrapper">
         <div class="feature-card">
             <h2>Quick Analysis</h2>
@@ -38,7 +37,7 @@
         </div>
         <div class="feature-card">
             <h2>High Accuracy</h2>
-            <p>95% training Accuracy</p>
+            <p>95% training Accuracy, 70% Validation Accuracy</p>
         </div>
         <div class="feature-card">
             <h2>Free to Use</h2>
@@ -52,7 +51,7 @@
             and should <b>not</b> be used to diagnose or treat pneumonia. The website can only provide predictions
         and not a definite answer and should never be used to replace professional medical workers.</p>
     </div>
-
+    
 </body>
 
 </html>

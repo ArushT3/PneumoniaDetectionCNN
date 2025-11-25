@@ -55,6 +55,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/extra')
+def extra():
+    return render_template('extra.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():

@@ -16,7 +16,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok = True)
 
 model = model_file.create_model()
-model.load_weights('pneumonia.weights.h5')
+model.load_weights('v2.pneumonia.weights.h5')
 
 def allowedFile(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg'}
@@ -82,12 +82,14 @@ def predict():
             processedImage = process_image(filepath)
             prediction = model.predict(processedImage)
 
+            print(f"Prediction: {prediction}")
+            
             if prediction[0][0] > 0.5:
-                result='Pneumonia'
+                result='Normal'
                 confidence = float(prediction[0][0])
             else:
-                result='Normal'
-                confidence = 1 - prediction[0][0]
+                result='Pneumonia'
+                confidence = 1 - float(prediction[0][0])
 
             return jsonify({
                 'result':result,
